@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { auth } from "../../Components/firebase/firebase"; // Assuming you have a firebase config file
 import { useNavigate } from "react-router-dom";
-import Typed from "typed.js";
+import {Typed} from "react-typed";
 
 function Home() {
   const typedElement = useRef(null);
