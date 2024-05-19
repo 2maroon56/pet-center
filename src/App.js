@@ -9,6 +9,8 @@ import Header from './view/partials/Header';
 import { auth, provider } from "./Components/firebase/firebase"; // Assuming config file with Firebase settings
 import Update from './view/account/Update';
 import Admin from '../src/view/admin/Admin';
+import Pet from '../src/view/pet/Pet';
+import AddPet from '../src/view/pet/AddPet';
 
 
 
@@ -31,6 +33,8 @@ function MainContent() {
          <Route path="/" element={<Home />} />
          <Route path="/account" element={<Update user={user} />} />
          <Route path="/admin" element={<Admin />} />
+         <Route path="/pet" element={<Pet />} />
+         <Route path="/pet/add" element={<AddPet />} />
        </Routes>
      </div>
  );

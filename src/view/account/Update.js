@@ -17,7 +17,6 @@ function Update() {
   const user = auth.currentUser;
 console.log(user)
   useEffect(() => {
-  
     if (user) {
       setUserId(user.uid);
       setEmail(localStorage.getItem('email') || '');

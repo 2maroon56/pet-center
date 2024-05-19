@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { auth } from "../../Components/firebase/firebase";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaw } from '@fortawesome/free-solid-svg-icons';
 import {updateProfile  } from "firebase/auth"; 
 import { getDatabase, ref, onValue, update } from "firebase/database";
-import { faPaw } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   const navigate = useNavigate();
@@ -60,7 +60,8 @@ function Header() {
     }
   };
   const pet = () => {
-
+    toggleDropdown();
+    navigate("/pet")
   }
 
   useEffect(() => {

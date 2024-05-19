@@ -315,6 +315,7 @@ span.username {
 }
 
 .dropdown-content {
+    margin-top: 20px;
     border: #7b2cbf 1px solid;
     display: none;
     position: absolute;
@@ -354,13 +355,15 @@ section {
     scroll-behavior: smooth;
 }
 .home-section {
-    margin-top: 850px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: justify;
     color: var(--text-color);
     min-height: 100vh;    
+}
+#root {
+    height: 100%;
 }
 .btn {
     display: inline-block;
@@ -395,13 +398,6 @@ section {
 .home-content p {
     line-height: 1.5;
 }
-span {
-    color: var(--main-color);
-}
-.Toastify__toast {
-    font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.5;
-  }
 .home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
@@ -415,8 +411,15 @@ span {
     line-height: 2;
     letter-spacing: 1px;
 }
+span {
+    color: var(--main-color);
+}
+.Toastify__toast {
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.5;
+  }
 .about {
-    background: linear-gradient(to right,#512da8, #c9d6ff);
+    background-color:  #c9d6ff;
 
 }
 
@@ -483,5 +486,30 @@ label {
 .container-update button {
     margin-top: 16px;
     font-size: 16px;
+}
 
+.empty-pet img {
+    width: 35%;
+}
+.container.pet-manage {
+    width: 600px;
+}
+
+.container.pet-manage h1 {
+    font-size: 2.5rem;
+    margin: 30px 0 30px 0;
+}
+.empty-pet {
+    background:#e4e4e4
+}
+.container.pet-manage span {
+    font-size: 2.5rem;
+}
+.container.pet-manage H3 {
+    margin: 10px 0 30px 0;
+    font-size: 2rem;
+}
+.container.pet-manage .btn {
+    cursor: pointer;
+    padding: 1.6rem 2.8rem;
 }

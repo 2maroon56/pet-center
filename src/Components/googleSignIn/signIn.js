@@ -116,7 +116,7 @@ function SignIn() {
           displayName: username,
           role: "user"
         });
-        addDataBase(userId, email, username); // Omit password from user data
+        addDataBase(userId, email, username, "user"); // Omit password from user data
         navigate("/"); // Redirect to home page
         toast.success("Login successfully. Wish you enjoy our best experiment");
       } catch (error) {
